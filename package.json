@@ -5,7 +5,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "postinstall": "echo '{\"main\":\"./browser/index\"}' > node_modules/typesaurus/adaptor/package.json"
   },
   "dependencies": {
     "@types/firebase": "^3.2.1",
