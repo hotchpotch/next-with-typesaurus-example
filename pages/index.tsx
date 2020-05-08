@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
 import * as firebase from "firebase/app";
 import "firebase/firestore";
-import { collection, get, Doc } from "typesaurus";
+import { collection } from "typesaurus";
+import { useGet } from "@typesaurus/react";
 
 const firebaseConfig = require("../firebase.config").default;
 
@@ -13,10 +13,7 @@ type User = { name: string };
 const users = collection<User>("users");
 
 const IndexPage = () => {
-  const [user, setUser] = useState<Doc<User> | null>(null);
-  useEffect(() => {
-    get(users, "42").then(setUser);
-  }, []);
+  const user = useGet(users, "42");
   return (
     <div>
       <h1>Hello Next.js 👋 {user?.data?.name}</h1>
