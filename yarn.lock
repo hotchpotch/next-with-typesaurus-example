@@ -1268,6 +1268,11 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+"@typesaurus/react@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@typesaurus/react/-/react-3.0.0.tgz#fe9a2b2eb3fea0fd456991c416492822a71c11c6"
+  integrity sha512-f6FM7HqgxzJabxd/BORy1MAUb1LtI87Rt+5xlndyTL1t3NsjLz7PU2JVOAbGYPbEq8qzhaYHpej0KpVuCQu8yQ==
+
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"
